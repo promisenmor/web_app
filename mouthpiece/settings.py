@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitnoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'mouthpiece.urls'
@@ -122,6 +123,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
@@ -144,5 +147,6 @@ EMAIL_HOST_PASSWORD = 'ubnb hmyb rboa ipng'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 
