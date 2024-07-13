@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-2q)3gjw3^y9^n-zx3(gf%j*i%g8)*pqd=6r%^6k-av4sb&2lp$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mymouthpiece.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
@@ -142,8 +142,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'nmorchibogu98@gmail.com'
-EMAIL_HOST_PASSWORD = 'ubnb hmyb rboa ipng'
+EMAIL_HOST_USER = os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_PASS')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

@@ -1,0 +1,17 @@
+{
+    "builds": [{
+        "src": "mouthpiece/wsgi.py",
+        "use": "@vercel/python",
+        "config": {"maxlambdasize": "15mb", "runtime": "python3.9"}
+    }],
+    "routes": [
+        {
+            "scr": "/(.*)",
+            "dest": "mouthpiece/wsgi.py"
+        }
+    ]
+
+
+
+
+}
