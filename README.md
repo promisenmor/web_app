@@ -4,7 +4,7 @@ A dynamic social media blogging platform that enables users to create, share, an
 
 ## 🌐 Live Demo
 
-Check out the live version: [web-app-mauve-theta.vercel.app](https://web-app-mauve-theta.vercel.app)
+Check out the live version: https://mouthpiece.vercel.app/
 
 ## 🚀 Features
 
